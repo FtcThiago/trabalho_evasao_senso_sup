@@ -13,7 +13,7 @@ def exibir():
     # Container central
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        st.image("https://img.freepik.com/free-vector/university-students-concept-illustration_114360-10802.jpg", use_column_width=True)
+        st.image("C:\Users\Thiago\Documents\devenvs\ambiente_virtual2\projetos\Projeot_censo_ed_streamlit\trabalho_evasao_senso_sup\Imagem\imagem_home.png", use_column_width=True)
 
     # Propósito da Análise
     st.markdown("""
