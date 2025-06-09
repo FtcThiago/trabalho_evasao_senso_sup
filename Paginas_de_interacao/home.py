@@ -23,10 +23,15 @@ def exibir():
 
     Através dos dados públicos do Censo da Educação Superior, buscamos responder perguntas como:
 
-    - Quais cursos apresentam **maior taxa de desistência**?
-    - Há diferença de evasão entre **turnos, sexos e raças**?
-    - A **modalidade de ensino (presencial vs EAD)** influencia na permanência?
-    - Como variáveis como **idade, rede e financiamento** impactam a conclusão do curso?
+    - Quantos alunos ingressaram e quantos se formaram ao longo dos anos?
+    - Existe diferença de evasão entre cursos noturnos e diurnos?
+    - A evasão varia entre faixas etárias?
+    - A cor/raça influencia na taxa de evasão?
+    - Alunos com deficiência têm maior evasão?
+    - A evasão é diferente entre cursos de áreas diferentes?
+    - A evasão é maior em cursos EAD?
+    - Qual é a distribuição racial dos estudantes em cada área do ensino superior?
+
 
     """)
 
@@ -39,7 +44,9 @@ def exibir():
     """)
 
     # Chamada final
-    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown("---")
     st.markdown("""
-    <h4 style='text-align: center;'>📊 Explore os dados nas páginas laterais e descubra os padrões por trás das taxas de desistência!</h4>
-    """, unsafe_allow_html=True)
+    <h2>👨‍💻 <b>Alunos:</b> Thiago Félix, Pedro Guimarães</h2>
+    <h2>👨‍🏫 <b>Professor orientador:</b> Alexandre Roriz</h2>
+    <h2>📅 <b>Ano dos dados analisados:</b> 2018-2022</h2>
+""", unsafe_allow_html=True)
