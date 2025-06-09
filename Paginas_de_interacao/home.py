@@ -25,15 +25,16 @@ def exibir():
 
         # Ajustando fundo e layout
         fig.update_layout(
-            title="Evasão Escolar ao Longo do Ano",
-            xaxis_title="Mês",
-            yaxis_title="Taxa (%)",
-            plot_bgcolor="black",
-            paper_bgcolor="black",
-            font=dict(color="white", size=14),
-            width=1000,  # Largura maior para um formato mais horizontal
-            height=400   # Altura menor para não ficar muito alongado
-        )
+        title="Evasão Escolar ao Longo do Ano",
+        xaxis_title="Mês",
+        yaxis_title="Taxa (%)",
+        plot_bgcolor="black",
+        paper_bgcolor="black",
+        font=dict(color="white", size=14),
+        width=1200,  # Aumentando a largura para um formato mais horizontal
+        height=300   # Reduzindo a altura para um fundo retangular
+    )
+
 
         # Exibir gráfico no Streamlit
         st.plotly_chart(fig)
