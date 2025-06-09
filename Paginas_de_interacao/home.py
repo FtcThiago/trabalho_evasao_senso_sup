@@ -16,29 +16,6 @@ def exibir():
     # Container central
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        x = np.linspace(1, 12, 12)  # Meses do ano
-        y = np.random.randint(20, 80, size=12)  # Valores fictícios
-
-        # Criando o gráfico interativo com Plotly
-        fig = go.Figure()
-        fig.add_trace(go.Scatter(x=x, y=y, mode='lines+markers', marker=dict(color='purple', size=8), line=dict(color='purple', width=2)))
-
-        # Ajustando fundo e layout
-        fig.update_layout(
-        title="Evasão Escolar ao Longo do Ano",
-        xaxis_title="Mês",
-        yaxis_title="Taxa (%)",
-        plot_bgcolor="black",
-        paper_bgcolor="black",
-        font=dict(color="white", size=14),
-        width=2000,  # Aumentando a largura para um formato mais horizontal
-        height=200   # Reduzindo a altura para um fundo retangular
-    )
-
-
-        # Exibir gráfico no Streamlit
-        st.plotly_chart(fig)
-
 
 
     # Propósito da Análise
