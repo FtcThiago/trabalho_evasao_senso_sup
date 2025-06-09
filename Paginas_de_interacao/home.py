@@ -1,4 +1,5 @@
 import streamlit as st
+import numpy as np
 
 def exibir():
  
@@ -13,7 +14,25 @@ def exibir():
     # Container central
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        st.image("Imagem/home_2.jpeg", use_container_width=True)
+        x = np.linspace(1, 12, 12)  # Meses do ano
+        y = np.random.randint(20, 80, size=12)  # Valores fictícios
+
+        # Criando a figura
+        fig, ax = plt.subplots(figsize=(12, 4))  # Ajusta largura e altura
+
+        ax.plot(x, y, color='#8000FF', linewidth=2, marker='o', markersize=8, label="Taxa de evasão")
+
+        # Personalizando o gráfico
+        ax.set_facecolor("black")  # Fundo preto
+        ax.tick_params(colors='white')  # Eixos em branco
+        ax.set_title("Evasão Escolar ao Longo do Ano", fontsize=14, color='white')
+        ax.set_xlabel("Mês", fontsize=12, color='white')
+        ax.set_ylabel("Taxa (%)", fontsize=12, color='white')
+        ax.legend(facecolor="black", edgecolor="white", fontsize=12)
+
+        # Exibir no Streamlit
+        st.pyplot(fig)
+
 
     # Propósito da Análise
     st.markdown("""
