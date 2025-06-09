@@ -13,7 +13,11 @@ def exibir():
     # Container central
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        st.image("Imagem/home_2.jpeg", use_container_width=True)
+        st.markdown(
+        '<img src="Imagem/home_2.avif" style="width: 100%; height: auto;">',
+        unsafe_allow_html=True
+    )
+
 
     # Propósito da Análise
     st.markdown("""
