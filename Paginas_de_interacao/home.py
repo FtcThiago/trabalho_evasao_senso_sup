@@ -18,21 +18,25 @@ def exibir():
         x = np.linspace(1, 12, 12)  # Meses do ano
         y = np.random.randint(20, 80, size=12)  # Valores fictícios
 
-        # Criando a figura
-        fig, ax = plt.subplots(figsize=(12, 4))  # Ajusta largura e altura
+        # Criando o gráfico interativo com Plotly
+        fig = go.Figure()
+        fig.add_trace(go.Scatter(x=x, y=y, mode='lines+markers', marker=dict(color='purple', size=8), line=dict(color='purple', width=2)))
 
-        ax.plot(x, y, color='#8000FF', linewidth=2, marker='o', markersize=8, label="Taxa de evasão")
+        # Ajustando fundo e layout
+        fig.update_layout(
+            title="Evasão Escolar ao Longo do Ano",
+            xaxis_title="Mês",
+            yaxis_title="Taxa (%)",
+            plot_bgcolor="black",
+            paper_bgcolor="black",
+            font=dict(color="white", size=14),
+            width=1000,  # Largura maior para um formato mais horizontal
+            height=400   # Altura menor para não ficar muito alongado
+        )
 
-        # Personalizando o gráfico
-        ax.set_facecolor("black")  # Fundo preto
-        ax.tick_params(colors='white')  # Eixos em branco
-        ax.set_title("Evasão Escolar ao Longo do Ano", fontsize=14, color='white')
-        ax.set_xlabel("Mês", fontsize=12, color='white')
-        ax.set_ylabel("Taxa (%)", fontsize=12, color='white')
-        ax.legend(facecolor="black", edgecolor="white", fontsize=12)
+        # Exibir gráfico no Streamlit
+        st.plotly_chart(fig)
 
-        # Exibir no Streamlit
-        st.pyplot(fig)
 
 
     # Propósito da Análise
