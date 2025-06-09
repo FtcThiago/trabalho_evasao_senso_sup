@@ -13,7 +13,7 @@ def exibir():
     # Container central
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        st.image("Imagem/imagem_home.png", use_column_width=True)
+        st.image("Imagem/imagem_home.png", use_container_width=True)
 
     # Propósito da Análise
     st.markdown("""
