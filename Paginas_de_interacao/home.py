@@ -1,14 +1,11 @@
 import streamlit as st
-import numpy as np
-import matplotlib.pyplot as plt
-import plotly.graph_objects as go
+
 
 def exibir():
- 
     # Título com destaque
     st.markdown("""
-    <h1 style='text-align: center; color: #2E86C1;'>🎓 Taxas de Desistência no Ensino Superior do Distrito Federal</h1>
-    <h4 style='text-align: center; color: #555;'>Análise baseada nos dados do Censo da Educação Superior</h4>
+    <h1 style='color: #2E86C1;'>🎓 Taxas de Desistência no Ensino Superior do Distrito Federal</h1>
+    <h4 style='color: #555;'>Análise baseada nos dados do Censo da Educação Superior</h4>
     """, unsafe_allow_html=True)
 
     st.markdown("---")
@@ -16,9 +13,7 @@ def exibir():
     # Container central
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-
-
-    # Propósito da Análise
+        # Propósito da Análise
         st.markdown("""
         ## 🎯 Propósito da Análise
 
@@ -34,8 +29,6 @@ def exibir():
         - A evasão é diferente entre cursos de áreas diferentes?
         - A evasão é maior em cursos EAD?
         - Qual é a distribuição racial dos estudantes em cada área do ensino superior?
-
-
         """)
 
         # Créditos
@@ -45,11 +38,3 @@ def exibir():
         👨‍🏫 **Professor orientador:** Alexandre Roriz  
         📅 **Ano dos dados analisados:** 2018-2022
         """)
-
-        # Chamada final
-        st.markdown("---")
-        st.markdown("""
-        <h2>👨‍💻 <b>Alunos:</b> Thiago Félix, Pedro Guimarães</h2>
-        <h2>👨‍🏫 <b>Professor orientador:</b> Alexandre Roriz</h2>
-        <h2>📅 <b>Ano dos dados analisados:</b> 2018-2022</h2>
-    """, unsafe_allow_html=True)
