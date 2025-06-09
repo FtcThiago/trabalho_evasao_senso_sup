@@ -32,7 +32,7 @@ def exibir():
         paper_bgcolor="black",
         font=dict(color="white", size=14),
         width=1200,  # Aumentando a largura para um formato mais horizontal
-        height=300   # Reduzindo a altura para um fundo retangular
+        height=3000   # Reduzindo a altura para um fundo retangular
     )
 
 
