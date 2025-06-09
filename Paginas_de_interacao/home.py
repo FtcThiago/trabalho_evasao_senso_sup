@@ -31,8 +31,8 @@ def exibir():
         plot_bgcolor="black",
         paper_bgcolor="black",
         font=dict(color="white", size=14),
-        width=1200,  # Aumentando a largura para um formato mais horizontal
-        height=3000   # Reduzindo a altura para um fundo retangular
+        width=2000,  # Aumentando a largura para um formato mais horizontal
+        height=200   # Reduzindo a altura para um fundo retangular
     )
 
 
