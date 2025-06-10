@@ -18,8 +18,6 @@ if menu == "🏠 Página Inicial":
     home.exibir()
 elif menu == "❓ Perguntas Investigativas":
     Perguntas.exibir()
-elif menu == "📉 Análise da Evasão":
-    evasao.exibir()
 elif menu == "📊 Dashboard Interativo":
     dashboard.exibir()
 elif menu == "🧠 Conclusões":
