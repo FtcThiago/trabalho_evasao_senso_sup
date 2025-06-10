@@ -28,7 +28,7 @@ elif menu == "📁 Sobre os Dados":
     sobre.exibir()
 
 # Créditos no menu lateral abaixo
-st.sidebar.markdown("<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>", unsafe_allow_html=True)  # Adiciona espaços
+st.sidebar.markdown("<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>", unsafe_allow_html=True)  # Adiciona espaços
 
 # Créditos refinados na barra lateral
 st.sidebar.markdown("**🔹 Créditos**")
