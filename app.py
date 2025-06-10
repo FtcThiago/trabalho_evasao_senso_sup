@@ -1,12 +1,7 @@
-
 import streamlit as st
 st.set_page_config(page_title="Análise Educacional", layout="wide")
 
 from Paginas_de_interacao import home, Perguntas, evasao, dashboard, conclusao, sobre, carregar_dados
-
-# Título fixo
-
-
 
 # Menu lateral
 menu = st.sidebar.selectbox("Navegue pelas seções:", [
@@ -18,7 +13,7 @@ menu = st.sidebar.selectbox("Navegue pelas seções:", [
     "📁 Sobre os Dados"
 ])
 
-# Renderização condicional
+# Renderização condicional das páginas
 if menu == "🏠 Página Inicial":
     home.exibir()
 elif menu == "❓ Perguntas Investigativas":
@@ -32,4 +27,10 @@ elif menu == "🧠 Conclusões":
 elif menu == "📁 Sobre os Dados":
     sobre.exibir()
 
-    
+# Créditos no menu lateral abaixo
+st.sidebar.markdown("---")
+st.sidebar.markdown("""
+👨‍💻 **Alunos:** Thiago Félix, Pedro Guimarães  
+👨‍🏫 **Professor orientador:** Alexandre Roriz  
+📅 **Ano dos dados analisados:** 2018-2022
+""")
