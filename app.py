@@ -1,7 +1,7 @@
 import streamlit as st
 st.set_page_config(page_title="Análise Educacional", layout="wide")
 
-from Paginas_de_interacao import home, Perguntas, evasao, dashboard, conclusao, sobre, carregar_dados
+from Paginas_de_interacao import home, Perguntas, dashboard, conclusao, sobre, carregar_dados
 
 # Menu lateral
 menu = st.sidebar.selectbox("Navegue pelas seções:", [
