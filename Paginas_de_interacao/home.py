@@ -28,10 +28,3 @@ def exibir():
     - Qual é a distribuição racial dos estudantes em cada área do ensino superior?
     """)
 
-    # Créditos
-    st.markdown("---")
-    st.markdown("""
-    👨‍💻 **Alunos:** Thiago Félix, Pedro Guimarães  
-    👨‍🏫 **Professor orientador:** Alexandre Roriz  
-    📅 **Ano dos dados analisados:** 2018-2022
-    """)
