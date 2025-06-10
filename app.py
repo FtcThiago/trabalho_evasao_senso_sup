@@ -28,9 +28,12 @@ elif menu == "📁 Sobre os Dados":
     sobre.exibir()
 
 # Créditos no menu lateral abaixo
-st.sidebar.markdown("---")
 st.sidebar.markdown("""
-👨‍💻 **Alunos:** Thiago Félix, Pedro Guimarães  
-👨‍🏫 **Professor orientador:** Alexandre Roriz  
-📅 **Ano dos dados analisados:** 2018-2022
-""")
+    <div style="background-color: #2E86C1; padding: 10px; border-radius: 8px;">
+        <h3 style="color: white; text-align: center;">🔹 Créditos 🔹</h3>
+    </div>
+    <br>
+    <p style="font-size: 16px;"><strong>👨‍💻 Alunos:</strong> Thiago Félix, Pedro Guimarães</p>
+    <p style="font-size: 16px;"><strong>👨‍🏫 Professor orientador:</strong> Alexandre Roriz</p>
+    <p style="font-size: 16px;"><strong>📅 Ano dos dados analisados:</strong> 2018-2022</p>
+""", unsafe_allow_html=True)
