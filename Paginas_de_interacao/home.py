@@ -14,7 +14,11 @@ def exibir():
     st.markdown("""
     ## 🎯 Propósito da Análise
 
-    Este projeto tem como objetivo compreender os fatores relacionados à **evasão no ensino superior** do Distrito Federal.
+    ## Objetivo da Análise
+    Este estudo tem como objetivo analisar e compreender os fatores associados às taxas de desistência em cursos de graduação no Distrito Federal. A investigação será conduzida com base em dados públicos extraídos de plataformas governamentais, que abrangem informações sobre instituições de ensino superior públicas e privadas. Para fins de recorte metodológico, a amostra será composta pelas dez instituições de ensino superior do DF que obtiveram as melhores avaliações segundo o Índice Geral de Cursos (IGC) do Ministério da Educação (MEC) no ano de 2021.
+
+    ## Justificativa
+    A escolha por focar apenas nas dez instituições de ensino superior mais bem avaliadas do Distrito Federal tem como objetivo garantir maior clareza e confiabilidade na análise. Essas instituições costumam ter estruturas mais organizadas e sistemas de gestão mais transparentes, o que facilita o acesso a dados mais completos e padronizados. Além disso, ao analisar faculdades com bom desempenho, buscamos entender se a evasão estudantil também ocorre em contextos considerados positivos — o que pode apontar para questões mais amplas e estruturais no ensino superior brasileiro. Essa delimitação também está relacionada ao fato de este ser um trabalho de início de graduação, o que exige um recorte de dados menor e mais viável, sem a necessidade de incluir todas as instituições do DF ou de outros estados do país.
 
     Através dos dados públicos do Censo da Educação Superior, buscamos responder perguntas como:
 
