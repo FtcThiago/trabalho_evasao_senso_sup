@@ -28,12 +28,10 @@ elif menu == "📁 Sobre os Dados":
     sobre.exibir()
 
 # Créditos no menu lateral abaixo
-st.sidebar.empty()  # Cria espaço
-st.sidebar.empty()
-st.sidebar.empty()
+st.sidebar.markdown("<br><br><br><br><br>", unsafe_allow_html=True)  # Adiciona espaços
 
 # Créditos refinados na barra lateral
-st.sidebar.write("**🔹 Créditos**")
+st.sidebar.markdown("**🔹 Créditos**")
 st.sidebar.text("👨‍💻 Alunos: Thiago Félix, Pedro Guimarães")
 st.sidebar.text("👨‍🏫 Professor orientador: Alexandre Roriz")
 st.sidebar.text("📅 Ano dos dados analisados: 2018-2022")
