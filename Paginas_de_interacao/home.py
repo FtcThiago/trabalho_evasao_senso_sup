@@ -12,9 +12,9 @@ def exibir():
 
     # Propósito da Análise (Agora fora das colunas!)
     st.markdown("""
-    ## 🎯 Propósito da Análise
+    ## 🎯 Objetivo da Análise
 
-    ## Objetivo da Análise
+   
     Este estudo tem como objetivo analisar e compreender os fatores associados às taxas de desistência em cursos de graduação no Distrito Federal. A investigação será conduzida com base em dados públicos extraídos de plataformas governamentais, que abrangem informações sobre instituições de ensino superior públicas e privadas. Para fins de recorte metodológico, a amostra será composta pelas dez instituições de ensino superior do DF que obtiveram as melhores avaliações segundo o Índice Geral de Cursos (IGC) do Ministério da Educação (MEC) no ano de 2021.
 
     ## Justificativa
